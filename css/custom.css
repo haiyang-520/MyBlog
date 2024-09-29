@@ -1,0 +1,254 @@
+/* Aplayer日间模式调整 背景色 */
+.aplayer {
+  background: rgba(255,255,255,0.6) !important;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.07), 0 1px 5px 0 rgba(0,0,0,0.1);
+  position: relative;
+}
+.aplayer.aplayer-fixed .aplayer-lrc:after,
+.aplayer.aplayer-fixed .aplayer-lrc:before {
+  display: none;
+}
+.aplayer.aplayer.aplayer-fixed .aplayer-body {
+  background: rgba(255,255,255,0.6) !important;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.07), 0 1px 5px 0 rgba(0,0,0,0.1);
+  position: fixed;
+}
+/* 引入字体库 */
+/* CSS */
+@import url("https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css");
+h1#site-title {
+  font-size: 6vh !important;
+  text-shadow: 5px 2px 6px #000 !important;
+  font-family: Fira Code !important;
+}
+span#subtitle {
+  font-size: 3vh !important;
+  text-shadow: 5px 2px 6px #000 !important;
+  font-family: Fira Code !important;
+}
+a#site-name {
+  text-shadow: 5px 2px 6px #000 !important;
+  font-family: Fira Code !important;
+}
+#article-container pre,
+#article-container code {
+  font-family: Fira Code !important;
+}
+.article-title {
+  font-weight: bolder;
+  font-family: Fira Code !important;
+}
+/* 滚动条 */
+.aplayer .aplayer-list ol::-webkit-scrollbar {
+  width: 5px;
+}
+.aplayer .aplayer-list ol::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: var(--theme-color) !important;
+}
+.aplayer .aplayer-list ol::-webkit-scrollbar-thumb:hover {
+  background-color: var(--theme-color) !important;
+}
+/* 圆角 */
+.aplayer.aplayer-fixed .aplayer-list {
+  border-radius: 6px 6px 0 0 !important;
+}
+.aplayer.aplayer-fixed .aplayer-miniswitcher {
+  border-radius: 0 6px 6px 0 !important;
+}
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  transition: 0.28s !important;
+  border-radius: 6px !important;
+}
+/* 选中与播放中歌曲激活颜色 */
+.aplayer .aplayer-list ol li:hover {
+  background: var(--theme-color) !important;
+}
+.aplayer .aplayer-list ol li.aplayer-list-light {
+  background: var(--theme-color) !important;
+}
+/* 歌词 */
+.aplayer-lrc p {
+  color: #fff !important;
+  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000;
+}
+/* Aplayer黑暗模式 */
+[data-theme="dark"] .aplayer {
+  background: rgba(115,112,112,0.6) !important;
+  color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.07), 0 1px 5px 0 rgba(0,0,0,0.1);
+}
+[data-theme="dark"] .aplayer.aplayer-fixed .aplayer-body {
+  background: rgba(22,22,22,0.6) !important;
+  color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.07), 0 1px 5px 0 rgba(0,0,0,0.1);
+}
+/* 代码框样式 */
+/* 代码高亮字体 */
+:root {
+  --hl-color: #24292e;
+  --hl-bg: #f6f8fa;
+  --hltools-bg: rgba(73,177,245,0.529);
+  --hltools-color: #fff;
+  --hlnumber-bg: #ebeff1;
+  --hlnumber-color: rgba(34,26,15,0.322);
+}
+.hljs {
+  background: #fff;
+  color: #000;
+}
+.hljs-comment,
+.hljs-quote,
+.hljs-variable {
+  color: #008000;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-built_in,
+.hljs-name,
+.hljs-tag {
+  color: #00f;
+}
+.hljs-string,
+.hljs-title,
+.hljs-section,
+.hljs-attribute,
+.hljs-literal,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-addition {
+  color: #a31515;
+}
+.hljs-deletion,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-meta {
+  color: #2b91af;
+}
+.hljs-doctag {
+  color: #808080;
+}
+.hljs-attr {
+  color: #f00;
+}
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #00b0e8;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-strong {
+  font-weight: bold;
+}
+/* 个人卡片渐变色 */
+/* 侧边栏个人信息卡片动态渐变色 */
+#aside-content > .card-widget.card-info {
+  background: linear-gradient(-45deg, #e8d8b9, #eccec5, #a3e9eb, #bdbdf0, #eec1ea);
+  box-shadow: 0 0 5px #424444;
+  position: relative;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite !important;
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* 黑夜模式适配 */
+[data-theme="dark"] #aside-content > .card-widget.card-info {
+  background: rgba(25,25,25,0.933);
+}
+/* 个人信息Follow me按钮 */
+#aside-content > .card-widget.card-info > #card-info-btn {
+  background-color: #3eb8be;
+  border-radius: 8px;
+}
+[data-theme="dark"] .aplayer,
+[data-theme="dark"] .aplayer-info,
+[data-theme="dark"] .aplayer-controller,
+[data-theme="dark"] .aplayer-time,
+[data-theme="dark"] .aplayer-icon,
+[data-theme="dark"] path {
+  fill: #d4d4d4;
+}
+[data-theme="dark"] [data-theme="dark"] .aplayer .aplayer-list ol li:hover {
+  background: var(--theme-color) !important;
+}
+[data-theme="dark"] [data-theme="dark"] .aplayer .aplayer-list ol li.aplayer-list-light {
+  background: var(--theme-color) !important;
+}
+[data-theme="dark"] [data-theme="dark"] .aplayer .aplayer-info .aplayer-controller .aplayer-time {
+  color: #d4d4d4;
+}
+[data-theme="dark"] [data-theme="dark"] .aplayer .aplayer-list ol li .aplayer-list-index {
+  color: #d4d4d4;
+}
+[data-theme="dark"] [data-theme="dark"] .aplayer .aplayer-list ol li .aplayer-list-author {
+  color: #d4d4d4;
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
