@@ -185,6 +185,11 @@ a#site-name {
   background-color: #3eb8be;
   border-radius: 8px;
 }
+/* card_announcement缩进 */
+.card-widget.card-announcement .announcement_content {
+  padding-left: 5px; /* 整段落增加左边距来实现缩进 */
+  text-indent: 2em; /* 首行缩进 */
+}
 [data-theme="dark"] .aplayer,
 [data-theme="dark"] .aplayer-info,
 [data-theme="dark"] .aplayer-controller,
